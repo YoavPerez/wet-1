@@ -1,0 +1,17 @@
+Init
+AddDataCenter 123 5 # New data center with 5 servers
+RequestServer 123 3 1 # Assigns server 3 as Windows
+RequestServer 123 3 0 # Assigns server 0 as Linux
+RequestServer 123 0 1 # Assigns server 1 as Windows
+FreeServer 123 1 # Frees server 1
+FreeServer 123 3 # Frees server 3
+FreeServer 123 3 # Server 3 is already free
+AddDataCenter 456 2 # New data center with 2 servers
+RequestServer 456 0 1 # Assigns server 0 as Windows
+GetDataCentersByOS 1 # Sorted by Windows
+AddDataCenter 789 10
+GetDataCentersByOS 0 # Sorted by Linux
+RemoveDataCenter 123
+RequestServer 123 3 1 # Data center does not exist anymore
+AddDataCenter 123 -5 # Invalid input is checked first
+Quit
