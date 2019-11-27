@@ -1,0 +1,24 @@
+init done.
+AddDataCenter: SUCCESS
+RequestServer: 3
+RequestServer: 0
+RequestServer: 1
+FreeServer: SUCCESS
+FreeServer: SUCCESS
+FreeServer: FAILURE
+AddDataCenter: SUCCESS
+RequestServer: 0
+GetDataCentersByOS: SUCCESS
+123
+456
+--End of data center list--
+AddDataCenter: SUCCESS
+GetDataCentersByOS: SUCCESS
+789
+123
+456
+--End of data center list--
+RemoveDataCenter: SUCCESS
+RequestServer: FAILURE
+AddDataCenter: INVALID_INPUT
+quit done.
